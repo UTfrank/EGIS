@@ -1,0 +1,178 @@
+.card {
+    border: none;
+    &__text {
+        font-size: 1.4rem;
+    }
+    &__icon-large {
+        font-size: 6rem;
+    }
+    &__product {
+        position: relative;
+        background-color: #fff;
+        border: none;
+        padding: 0px;
+        overflow: hidden;
+        border-radius: 5px;
+        -webkit-box-shadow: .6rem .1rem 2.1rem -.5rem rgba($color-black,0.75);
+        -moz-box-shadow: .6rem .1rem 2.1rem -.5rem rgba($color-black,0.75);
+        box-shadow: .6rem .1rem 2.1rem -.5rem rgba($color-black,0.75);
+
+        &-shadowless {
+            box-shadow: none;
+            border: .12rem solid rgba($color-black,0.3);
+        }
+
+        & a:link,
+        & a:visited,
+        & a:focus,
+        & a:hover {
+            text-decoration: none;
+        }
+
+        &-header {
+            position: relative;
+            height: 35rem;
+            overflow: hidden;
+        }
+        &-image {
+            width: 100%;
+        }
+        &-tag {
+            position: absolute;
+            top: 85%;
+            left: 5%;
+            font-size: 1.2rem;
+            color: $color-black;
+            padding: .7rem .7rem;
+        }
+        &-body {
+            padding: 1rem 1rem;
+        }
+        &-title {
+            color: $color-black;
+            font-size: 2rem;
+            margin-bottom: .75rem;
+        }
+        &-brand {
+            color: $color-black;
+            font-size: 1.3rem;
+            margin-bottom: .5rem;
+        }
+        &-price {
+            color: $color-black;
+            font-size: 1.45rem;
+            &--slash {
+                color: $color-grey-50;
+                margin-right: .6rem;
+            }
+        }
+        &-status {
+            color: $color-white;
+            background-color: $color-black;
+            border: .1rem solid $color-black;
+            padding: .55rem;
+            text-transform: capitalize;
+            font-size: 1rem;
+        }
+        &-discount {
+            color: $color-black;
+            span {
+                border: .1rem solid $color-black;
+                padding: .55rem;
+            }
+        }
+    }
+    &__product-2 {
+        position: relative;
+        background-color: #fff;
+        border: none;
+        padding: 0px;
+        overflow: hidden;
+        border-radius: none;
+        -webkit-box-shadow: .6rem .1rem 2.1rem -.5rem rgba($color-black,0.75);
+        -moz-box-shadow: .6rem .1rem 2.1rem -.5rem rgba($color-black,0.75);
+        box-shadow: .6rem .1rem 2.1rem -.5rem rgba($color-black,0.75);
+
+        &-shadowless {
+            box-shadow: none;
+            border: .12rem solid rgba($color-black,0.3);
+        }
+
+        & a:link,
+        & a:visited,
+        & a:focus,
+        & a:hover {
+            text-decoration: none;
+        }
+
+        &-header {
+            position: relative;
+            height: 20rem;
+            overflow: hidden;
+        }
+        &-image {
+            width: 100%;
+        }
+        &-tag {
+            position: absolute;
+            top: 85%;
+            left: 5%;
+            font-size: 1.2rem;
+            color: $color-black;
+            padding: .7rem .7rem;
+        }
+        &-body {
+            padding: 1rem 1rem;
+        }
+        &-title {
+            color: $color-grey-30;
+            font-family: $segoe-ui-bold;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: .75rem;
+        }
+        &-brand {
+            color: $color-grey-30;
+            font-family: $poppins-medium;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: .5rem;
+        }
+        &-price {
+            color: $color-grey-30;
+            font-family: $poppins-medium;
+            font-weight: bolder;
+            font-size: 2.45rem;
+            &--slash {
+                color: $color-grey-50;
+                margin-right: .6rem;
+            }
+        }
+        &-status {
+            color: $color-white;
+            background-color: $color-black;
+            border: .1rem solid $color-black;
+            padding: .55rem;
+            text-transform: capitalize;
+            font-size: 1rem;
+        }
+        &-discount {
+            .btn {
+                color: $color-grey-30;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            span {
+                border: .1rem solid $color-black;
+                padding: .55rem;
+            }
+        }
+        &-text {
+            color: $color-grey-30;
+            font-family: $poppins-medium;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: .5rem;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.form {
+    &__search {
+        position: relative;
+        &-input {
+            font-size: 1.4rem;
+            padding: 3rem 2rem 3rem 2rem;
+            border-right: none;
+            border-radius: .5rem;
+            border-top-right-radius: 0rem;
+            border-bottom-right-radius: 0rem;
+        }
+    }
+    &__subscribe {
+        position: relative;
+        &-input {
+            font-size: 1.4rem;
+            padding: 3rem 2rem 3rem 2rem;
+            border-right: none;
+            border-radius: 5rem;
+            border-top-right-radius: 0rem;
+            border-bottom-right-radius: 0rem;
+        }
+    }
+    &__page-left,
+    &__page-right {
+        height: 100vh;
+    }
+    &__page-left {
+        background-image: linear-gradient(to left, rgba($color-black, .5), rgba($color-black, .5)), url('../../../../assets/images/carousel-3.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        padding: 4rem;
+    }
+    &__page-right {
+        padding: 6.9rem;
+    }
+    &__header {
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 2rem;
+    }
+    &__group {
+        margin-top: 1rem;
+        padding-bottom: 0rem;
+    }
+    &__input,
+    &__textarea,
+    &__select {
+        outline: none;
+        font-size: 1.4rem;
+        margin-bottom: 0rem;
+    }
+    &__input,
+    &__textarea {
+        border: .15rem solid rgba($color-black, .05);
+        transition: all .5s ease;
+        &:hover {
+            border: .15rem solid rgba($color-orange, .09); 
+        }
+        &:focus,
+        &:active {
+            border: .15rem solid rgba($color-orange, .5); 
+        }
+    }
+    &__input,
+    &__select {
+        padding: 1.5rem 3rem;
+        border-radius: 4rem;
+    }
+    &__btn {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    &__text {
+        font-size: 1.35rem;
+    }
+    &__link {
+        transition: all .45s ease;
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-grey-50;
+            font-weight: 700;
+        }
+        &:focus,
+        &:hover,
+        &:active {
+            color: $color-orange;
+        }
+    }
+    &__divider {
+        color: $color-grey-50;
+        font-size: 1.35rem;
+        text-transform: uppercase;
+        position: relative;
+        margin-top: 1.7rem;
+        margin-bottom: .7rem;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: .1rem;
+            width: 40%;
+            background-color: $color-grey-50;
+        }
+        &::before {
+            content: '';
+            left: 4%;
+        }
+        &::after {
+            content: '';
+            right: 4%;
+        }
+    }
+}

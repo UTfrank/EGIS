@@ -1,0 +1,178 @@
+.product {
+    font-family: $poppins-regular;
+    &__carousel {
+        height: 10rem;
+        border: .1rem solid rgba($color-black, .4);
+        border-radius: 0rem;
+        &:not(:last-of-type) {
+            margin-left: 2rem;
+        }
+        &,
+        &-big {
+            border: .1rem solid rgba($color-black, .4);
+            border-radius: 0rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            & img {
+                width: 100%;
+            }
+        }
+        &-big {
+            height: 40rem;
+        }
+    }
+    &__heading-primary {
+        font-size: 4rem;
+        font-weight: 1000;
+        color: $color-grey-30;
+        line-height: 4.5rem;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $color-grey-30;
+        line-height: 4rem;
+        // letter-spacing: .2rem;
+    }
+    &__status {
+        font-size: 2rem;
+        font-weight: 1000;
+        color: $color-grey-30;
+        text-transform: capitalize; 
+    }
+    &__price,
+    &__btn,
+    &__input {
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        font-weight: 1000;
+        color: $color-grey-30;
+    }
+    &__price,
+    &__input {
+        border: .1rem solid $color-grey-30;
+        font-size: 3rem;
+    }
+    &__btn {
+        font-size: 2.5rem;
+    }
+    &__nav {
+        margin-bottom: 2.5rem;
+        &-item {
+            &:not(:last-of-type) {
+                margin-right: 2rem;
+            }
+        }
+        &-link {
+            text-transform: capitalize;
+            &:link,
+            &:visited {
+                border: none;
+                font-size: 3rem;
+                font-weight: 1000;
+                color: $color-grey-30 !important;
+            }
+            &:focus,
+            &:hover,
+            &:active,
+            &.active {
+                border-bottom: .15rem solid $color-orange;
+            }
+        }
+
+    }
+    &__tab {
+        &-content {
+            border: .1rem solid $color-grey-30;
+            padding: 2rem;
+        }
+        &-pane {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        &-heading {
+            font-size: 3.5rem;
+            font-weight: 1000;
+            color: $color-grey-30;
+            line-height: 4.5rem;
+            letter-spacing: .2rem;
+            text-transform: capitalize; 
+            margin-bottom: 2rem;
+        }
+        &-heading-sm {
+            font-size: 2.5rem;
+            font-weight: 1000;
+            color: $color-grey-30;
+            letter-spacing: .2rem;
+            text-transform: capitalize;
+        }
+        &-heading-xs {
+            font-size: 2rem;
+            font-weight: 1000;
+            color: $color-grey-50;
+            line-height: 3.5rem;
+            letter-spacing: .2rem;
+            text-transform: capitalize;
+            margin-bottom: 2rem;
+        }
+        &-text {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: $color-grey-30;
+            line-height: 4rem;
+            margin-bottom: 3rem;
+        }
+        &-text-sm {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $color-grey-30;
+            line-height: 4rem;
+            margin-bottom: .5rem;
+        }
+        &-list {
+            list-style-type: disc !important;
+            margin-left: 4rem;
+        }
+        &-item {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $color-grey-30;
+            line-height: 4rem;
+            margin-bottom: .5rem !important;
+        }
+        &-review-heading {
+            font-size: 2.5rem;
+            color: $color-black;
+            line-height: 3rem;
+            margin-bottom: 2rem;
+        }
+        &-review-text {
+            font-size: 1.5rem;
+            color: $color-black;
+            line-height: 2.5rem;
+            margin-bottom: .5rem;
+        }
+        &-review-date {
+            font-size: 1.2rem;
+            color: $color-black;
+            line-height: 2.5rem;
+            margin-bottom: .5rem;
+        }
+        &-review-link {
+            &:link,
+            &:visited,
+            &:focus,
+            &:hover {
+                font-size: 1.4rem;
+                color: $color-black;
+                text-decoration: underline;
+                line-height: 3rem;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.page {
+    &-item.active &-link {
+        background-color: $color-yellow !important;
+        border-color: $color-yellow !important;
+    }
+    &-link {
+        padding: 1rem;
+        border: .1rem solid rgba($color-black, .3);
+        font-size: 1.3rem;
+        &:link,
+        &:visited {
+            color: $color-grey-50;
+        }
+        &:focus,
+        &:hover {
+            border: .1rem solid $color-yellow;
+            color: $color-yellow;
+        }
+    }
+}

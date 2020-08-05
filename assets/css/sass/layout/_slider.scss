@@ -1,0 +1,12 @@
+.slick {
+    &-track {
+        width: 462rem !important;
+        height: fit-content;
+    }
+}
+
+.slider {
+    &-wrapper .multiple-items {
+        height: fit-content;
+    }
+}

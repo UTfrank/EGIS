@@ -1,0 +1,30 @@
+// .navbar {
+//     &-brand {}
+//     &-nav {}
+// }
+
+.nav {
+    &-item {
+        &:first-of-type {
+            margin-right: 10rem;
+        }
+        &.dropdown {
+            & .dropdown {
+                &-menu {
+                    width: auto;
+                }
+                &-header,&-item {
+                    font-size: 1.4rem;
+                }
+                &-header {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &-link {
+        font-size: 1.4rem;
+        color: $color-white !important;
+        padding: 1.5rem !important;
+    }
+}

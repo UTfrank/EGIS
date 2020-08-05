@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EGIS - Product Description Page</title>
+
+    <link rel="stylesheet" href="assets/css/sass/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/sass/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/sass/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/sass/vendor/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <header class="header col-12">
+                <div class="row justify-content-center">
+                    <div class="header__top col-12 p-3 bg-grey-80">
+                        <ul class="list__horizontal">
+                            <li class="list__horizontal-item">
+                                <a href="#" class="list__horizontal-link">
+                                    <span class="mdi mdi-cart mr-1"></span>cart
+                                </a>
+                            </li>
+                            <li class="list__horizontal-item">
+                                <a href="#" class="list__horizontal-link">
+                                    <span class="mdi mdi-account-circle-outline mr-1"></span>my account
+                                </a>
+                            </li>
+                            <li class="list__horizontal-item">
+                                <a href="#" class="list__horizontal-link">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__middle col-12 bg-white">
+                        <div class="row justify-content-center">
+                            <form class="form-inline form__search my-2 my-lg-0 col-md-6 col-12">
+                                <input class="form-control form__search-input col-10" type="search"
+                                    placeholder="Search Products" aria-label="Search">
+                                <button class="btn btn__search my-2 my-sm-0 bg-orange col-2" type="submit">
+                                    <span class="mdi mdi-magnify"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-light w-100 bg-orange">
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="dropdownMenuOffset" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false" data-offset="10,20" role="button">
+                                        Products
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                        <h6 class="dropdown-header">Browse By Product Type</h6>
+                                        <a class="dropdown-item" href="#">Plasma Systems</a>
+                                        <a class="dropdown-item" href="#">Waterjet</a>
+                                        <a class="dropdown-item" href="#">CAD/CAM Software</a>
+                                        <a class="dropdown-item" href="#">CNCs</a>
+                                        <a class="dropdown-item" href="#">Height Controls</a>
+                                        <a class="dropdown-item" href="#">Torches</a>
+                                        <a class="dropdown-item" href="#">Accessories</a>
+                                        <div class="dropdown-divider"></div>
+                                        <h6 class="dropdown-header">Browse By Product Line</h6>
+                                        <a class="dropdown-item" href="#">XPR Plasma</a>
+                                        <a class="dropdown-item" href="#">HyPerformance Plasma</a>
+                                        <a class="dropdown-item" href="#">Powermax Plasma</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Eland Cable</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Our Company</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Learn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                            <!-- <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form> -->
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- breadcrumbs -->
+            <!-- <div class="col-12">
+                <div class="row">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"><span class="mdi mdi-home"></span></a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Product Page</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div> -->
+            <!-- product section -->
+            <div class="col-12 mt-5 p-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 col-md-6 col-12">
+                        <div class="col-12 mb-4">
+                            <div class="slider-for product__carousel-big w-100">
+                                <img src="assets/images/powermax125_hypertherm_plasmacutter_mechanized.jpg" alt="">
+                                <img src="assets/images/powermax85_hypertherm_plasmacutter_mechanized.jpg" alt="">
+                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg" alt="">
+                                <img src="assets/images/hypertherm-powermax-30-plasma-cutter.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="slider-nav">
+                                <div class="product__carousel">
+                                    <img src="assets/images/powermax125_hypertherm_plasmacutter_mechanized.jpg" alt="">
+                                </div>
+                                <div class="product__carousel">
+                                    <img src="assets/images/powermax85_hypertherm_plasmacutter_mechanized.jpg" alt="">
+                                </div>
+                                <div class="product__carousel">
+                                    <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg" alt="">
+                                </div>
+                                <div class="product__carousel">
+                                    <img src="assets/images/hypertherm-powermax-30-plasma-cutter.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-12">
+                        <div class="row justify-content-center">
+                            <h1 class="product__heading-primary col-12 text-center">
+                                plasma screwdriver screw1500acc
+                            </h1>
+                            <p class="col-12 product__text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi commodi tempora maxime, veritatis vitae aperiam cumque? Consequuntur, cum iusto laborum, officia dicta non, rem a vel dolorum consectetur voluptatibus earum.
+                            </p>
+                            <p class="col-md-6 col-12 product__status">Availability: In Stock</p>
+                            <p class="col-md-6 col-12 product__status">Brand: Hypertherm</p>
+                            <div class="col-12 d-flex justify-content-center mt-5">
+                                <div class="product__price bg-yellow text-center">$ 4,000</div>
+                            </div>
+                            <div class="col-md-4 col-12 d-flex justify-content-center mt-5 mr-md-3 p-0">
+                                <input type="number" class="product__input col-12 text-center">
+                            </div>
+                            <div class="col-md-4 col-12 d-flex justify-content-center mt-5 ml-md-3 p-0">
+                                <button class="btn product__btn bg-yellow col-12 text-center">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-5">
+                        <div class="row justify-content-center">
+                            <ul class="nav justify-content-center product__nav" id="myTab" role="tablist">
+                                <li class="nav-item product__nav-item" role="presentation">
+                                    <a class="nav-link product__nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">description</a>
+                                </li>
+                                <li class="nav-item product__nav-item" role="presentation">
+                                    <a class="nav-link product__nav-link" id="specification-tab" data-toggle="tab" href="#specification" role="tab" aria-controls="specification" aria-selected="false">specification</a>
+                                </li>
+                                <li class="nav-item product__nav-item" role="presentation">
+                                    <a class="nav-link product__nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">reviews</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content product__tab-content col-12" id="myTabContent">
+                                <div class="tab-pane product__tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                                    <h1 class="product__tab-heading col-12">
+                                        product description
+                                    </h1>
+                                    <p class="col-12 product__tab-text">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi commodi tempora maxime, veritatis vitae aperiam cumque? Consequuntur, cum iusto laborum, officia dicta non, rem a vel dolorum consectetur voluptatibus earum.
+                                    </p>
+                                    <p class="col-12 product__tab-text">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi commodi tempora maxime, veritatis vitae aperiam cumque? Consequuntur, cum iusto laborum, officia dicta non, rem a vel dolorum consectetur voluptatibus earum.
+                                    </p>
+                                    <p class="col-12 product__tab-text">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi commodi tempora maxime, veritatis vitae aperiam cumque? Consequuntur, cum iusto laborum, officia dicta non, rem a vel dolorum consectetur voluptatibus earum.
+                                    </p>
+                                    <hr class="bg-grey-30">
+                                    <h1 class="product__tab-heading col-12">
+                                        resources
+                                    </h1>
+                                    <hr class="bg-grey-30">
+                                    <div class="col-12">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-4 col-12 mt-4">
+                                                <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                                    <div class="card__product-2-body">
+                                                        <p class="card__product-2-text col-12">
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error similique officiis corrupti dicta vero eos velit ipsa eaque.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12 mt-4">
+                                                <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                                    <div class="card__product-2-body">
+                                                        <p class="card__product-2-text col-12">
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error similique officiis corrupti dicta vero eos velit ipsa eaque.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12 mt-4">
+                                                <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                                    <div class="card__product-2-body">
+                                                        <p class="card__product-2-text col-12">
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error similique officiis corrupti dicta vero eos velit ipsa eaque.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12 mt-4">
+                                                <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                                    <div class="card__product-2-body">
+                                                        <p class="card__product-2-text col-12">
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error similique officiis corrupti dicta vero eos velit ipsa eaque.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12 mt-4">
+                                                <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                                    <div class="card__product-2-body">
+                                                        <p class="card__product-2-text col-12">
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error similique officiis corrupti dicta vero eos velit ipsa eaque.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-12 mt-4">
+                                                <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                                    <div class="card__product-2-body">
+                                                        <p class="card__product-2-text col-12">
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error similique officiis corrupti dicta vero eos velit ipsa eaque.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane product__tab-pane fade" id="specification" role="tabpanel" aria-labelledby="specification-tab">
+                                    <h1 class="product__tab-heading col-12">
+                                        specification
+                                    </h1>
+                                    <h1 class="product__tab-heading-sm col-12">
+                                        general
+                                    </h1>
+                                    <hr class="bg-grey-30">
+                                    <h1 class="product__tab-heading-xs col-12">
+                                        xpr 300 plasma cutting system
+                                    </h1>
+                                    <p class="col-12 product__tab-text-sm">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi commodi tempora maxime, veritatis vitae aperiam cumque? Consequuntur, cum iusto laborum, officia dicta non, rem a vel dolorum consectetur voluptatibus earum.
+                                    </p>
+                                    <hr class="bg-grey-30">
+                                    <h1 class="product__tab-heading-sm col-12">
+                                        dimensions
+                                    </h1>
+                                    <hr class="bg-grey-30">
+                                    <div class="col-12">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-6 col-12" style="border-right: .05rem solid #483e3e;">
+                                                <p class="col-12 product__tab-text-sm">
+                                                    Maximun open-circuit voltage (U0)
+                                                </p>
+                                                <p class="col-12 product__tab-text-sm">
+                                                    Maximum output current
+                                                </p>
+                                                <p class="col-12 product__tab-text-sm">
+                                                    Maximum output power
+                                                </p>
+                                                <p class="col-12 product__tab-text-sm">
+                                                    output voltage
+                                                </p>
+                                                <p class="col-12 product__tab-text-sm">
+                                                    Duty cycle rating
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6 col-12" style="border-left: .05rem solid #483e3e;">
+                                                <p class="col-12 product__tab-text-sm">
+                                                    360 VDC
+                                                </p>
+                                                <p class="col-12 product__tab-text-sm">
+                                                    300 A
+                                                </p>
+                                                <p class="col-12 product__tab-text-sm">
+                                                    66.5 kW
+                                                </p>
+                                                <p class="col-12 product__tab-text-sm">
+                                                    50 VDC - 210 VDC
+                                                </p>
+                                                <p class="col-12 product__tab-text-sm">
+                                                    100% at 66.5 kW, 40&#8451; (104&#8457; )
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="bg-grey-30">
+                                    <h1 class="product__tab-heading-sm col-12">
+                                        benefits
+                                    </h1>
+                                    <hr class="bg-grey-30">
+                                    <h1 class="product__tab-heading-xs col-12">
+                                        optimized productivity and reduced operating costs
+                                    </h1>
+                                    <p class="col-12 product__tab-text-sm">
+                                        <ul class="list__vertical product__tab-list">
+                                            <li class="list__vertical-item product__tab-item">
+                                                significantly reduced cost
+                                            </li>
+                                            <li class="list__vertical-item product__tab-item">
+                                                increased cost speed
+                                            </li>
+                                            <li class="list__vertical-item product__tab-item">
+                                                dramatic improvement
+                                            </li>
+                                            <li class="list__vertical-item product__tab-item">
+                                                thicker piercing capability
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="tab-pane product__tab-pane fade pt-5" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-7 col-12 mb-5">
+                                            <p class="col-12 product__tab-review-heading mb-1">Reviews (1490)</p>
+                                            <p class="col-12 product__tab-review-text">
+                                                <span class="product__tab-text color-black">
+                                                    <span class="mdi mdi-star-outline color-black"></span>
+                                                    <span class="color-black">4</span>
+                                                </span>
+                                                /5 Average Rating
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5 col-12 mb-5">
+                                            <div class="row justify-content-end m-0 p-0">
+                                                <button class="btn btn__yellow-squared">WRITE REVIEW</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-12 mb-5">
+                                            <div class="row">
+                                                <div class="col product__tab-review-text">
+                                                    <span class="mdi mdi-account-circle-outline mdi-48px"></span>
+                                                </div>
+                                                <div class="col-11">
+                                                    <p class="col-12 product__tab-review-text">Name Surname</p>
+                                                    <p class="col-12 product__tab-review-text">
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star-outline color-black"></span>
+                                                        <span class="mdi mdi-star-outline color-black"></span>
+                                                    </p>
+                                                    <p class="col-12 product__tab-review-dte">5 September, 2019</p>
+                                                    <p class="col-12 product__tab-review-text">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic incidunt sequi ipsam nostrum dolorem ut, reprehenderit itaque enim dolor exercitationem maxime odit nihil laudantium est magnam optio amet voluptatum consectetur.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-12 mb-5">
+                                            <div class="row">
+                                                <div class="col product__tab-review-text">
+                                                    <span class="mdi mdi-account-circle-outline mdi-48px"></span>
+                                                </div>
+                                                <div class="col-11">
+                                                    <p class="col-12 product__tab-review-text">Name Surname</p>
+                                                    <p class="col-12 product__tab-review-text">
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star-outline color-black"></span>
+                                                        <span class="mdi mdi-star-outline color-black"></span>
+                                                    </p>
+                                                    <p class="col-12 product__tab-review-dte">5 September, 2019</p>
+                                                    <p class="col-12 product__tab-review-text">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic incidunt sequi ipsam nostrum dolorem ut, reprehenderit itaque enim dolor exercitationem maxime odit nihil laudantium est magnam optio amet voluptatum consectetur.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="col-12 mb-5 color-grey-50">
+                                        <div class="col-md-7 col-12 mb-5">
+                                            <div class="row">
+                                                <div class="col product__tab-review-text">
+                                                    <span class="mdi mdi-account-circle-outline mdi-48px"></span>
+                                                </div>
+                                                <div class="col-11">
+                                                    <p class="col-12 product__tab-review-text">Name Surname</p>
+                                                    <p class="col-12 product__tab-review-text">
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star-outline color-black"></span>
+                                                        <span class="mdi mdi-star-outline color-black"></span>
+                                                    </p>
+                                                    <p class="col-12 product__tab-review-dte">5 September, 2019</p>
+                                                    <p class="col-12 product__tab-review-text">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic incidunt sequi ipsam nostrum dolorem ut, reprehenderit itaque enim dolor exercitationem maxime odit nihil laudantium est magnam optio amet voluptatum consectetur.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-12 mb-5">
+                                            <div class="row">
+                                                <div class="col product__tab-review-text">
+                                                    <span class="mdi mdi-account-circle-outline mdi-48px"></span>
+                                                </div>
+                                                <div class="col-11">
+                                                    <p class="col-12 product__tab-review-text">Name Surname</p>
+                                                    <p class="col-12 product__tab-review-text">
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star-outline color-black"></span>
+                                                        <span class="mdi mdi-star-outline color-black"></span>
+                                                    </p>
+                                                    <p class="col-12 product__tab-review-dte">5 September, 2019</p>
+                                                    <p class="col-12 product__tab-review-text">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic incidunt sequi ipsam nostrum dolorem ut, reprehenderit itaque enim dolor exercitationem maxime odit nihil laudantium est magnam optio amet voluptatum consectetur.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="col-12 mb-5 color-grey-50">
+                                        <div class="col-md-7 col-12 mb-5">
+                                            <div class="row">
+                                                <div class="col product__tab-review-text">
+                                                    <span class="mdi mdi-account-circle-outline mdi-48px"></span>
+                                                </div>
+                                                <div class="col-11">
+                                                    <p class="col-12 product__tab-review-text">Name Surname</p>
+                                                    <p class="col-12 product__tab-review-text">
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star-outline color-black"></span>
+                                                        <span class="mdi mdi-star-outline color-black"></span>
+                                                    </p>
+                                                    <p class="col-12 product__tab-review-dte">5 September, 2019</p>
+                                                    <p class="col-12 product__tab-review-text">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic incidunt sequi ipsam nostrum dolorem ut, reprehenderit itaque enim dolor exercitationem maxime odit nihil laudantium est magnam optio amet voluptatum consectetur.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-12 mb-5">
+                                            <div class="row">
+                                                <div class="col product__tab-review-text">
+                                                    <span class="mdi mdi-account-circle-outline mdi-48px"></span>
+                                                </div>
+                                                <div class="col-11">
+                                                    <p class="col-12 product__tab-review-text">Name Surname</p>
+                                                    <p class="col-12 product__tab-review-text">
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star color-black"></span>
+                                                        <span class="mdi mdi-star-outline color-black"></span>
+                                                        <span class="mdi mdi-star-outline color-black"></span>
+                                                    </p>
+                                                    <p class="col-12 product__tab-review-dte">5 September, 2019</p>
+                                                    <p class="col-12 product__tab-review-text">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic incidunt sequi ipsam nostrum dolorem ut, reprehenderit itaque enim dolor exercitationem maxime odit nihil laudantium est magnam optio amet voluptatum consectetur.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="col-12 mb-5 color-grey-50">
+                                        <div class="col-12 text-center">
+                                            <a href="#" class="product__tab-review-link">View All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- top sellers section -->
+            <div class="col-12 mt-5 p-5">
+                <div class="row justify-content-center">
+                    <h2 class="col-12 heading__secondary">
+                        related products
+                    </h2>
+                    <div class="col-11 slider-wrapper">
+                        <div class="row justify-content-center">
+                            <div class="multiple-items w-100">
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-2-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-2-image img-fluid">
+                                            </div>
+                                            <div class="card__product-2-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-2-title col-12">Branded Electric Toolset</h5>
+                                                    <p class="card__product-2-brand col-12">Brand</p>
+                                                    <p class="card__product-2-price col-6">
+                                                        $250
+                                                    </p>
+                                                    <p class="card__product-2-discount col-6">
+                                                        <button class="btn btn__yellow-curved-2">
+                                                            Add to Cart
+                                                        </button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-2-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-2-image img-fluid">
+                                            </div>
+                                            <div class="card__product-2-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-2-title col-12">Branded Electric Toolset</h5>
+                                                    <p class="card__product-2-brand col-12">Brand</p>
+                                                    <p class="card__product-2-price col-6">
+                                                        $250
+                                                    </p>
+                                                    <p class="card__product-2-discount col-6">
+                                                        <button class="btn btn__yellow-curved-2">
+                                                            Add to Cart
+                                                        </button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-2-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-2-image img-fluid">
+                                            </div>
+                                            <div class="card__product-2-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-2-title col-12">Branded Electric Toolset</h5>
+                                                    <p class="card__product-2-brand col-12">Brand</p>
+                                                    <p class="card__product-2-price col-6">
+                                                        $250
+                                                    </p>
+                                                    <p class="card__product-2-discount col-6">
+                                                        <button class="btn btn__yellow-curved-2">
+                                                            Add to Cart
+                                                        </button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-2-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-2-image img-fluid">
+                                            </div>
+                                            <div class="card__product-2-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-2-title col-12">Branded Electric Toolset</h5>
+                                                    <p class="card__product-2-brand col-12">Brand</p>
+                                                    <p class="card__product-2-price col-6">
+                                                        $250
+                                                    </p>
+                                                    <p class="card__product-2-discount col-6">
+                                                        <button class="btn btn__yellow-curved-2">
+                                                            Add to Cart
+                                                        </button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-2-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-2-image img-fluid">
+                                            </div>
+                                            <div class="card__product-2-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-2-title col-12">Branded Electric Toolset</h5>
+                                                    <p class="card__product-2-brand col-12">Brand</p>
+                                                    <p class="card__product-2-price col-6">
+                                                        $250
+                                                    </p>
+                                                    <p class="card__product-2-discount col-6">
+                                                        <button class="btn btn__yellow-curved-2">
+                                                            Add to Cart
+                                                        </button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <footer class="col-12 footer bg-grey-50">
+                <div class="row justify-content-center">
+                    <div class="col-md-2 col-12 footer__logo">
+                        <img src="assets/images/teachable-logo.png" alt="teachable logo" class="img-fluid">
+                    </div>
+                    <div class="col-md-2 col-12">
+                        <p class="footer__header col-12">Our Company</p>
+                        <ul class="footer__list list__vertical">
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Home</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">About</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Contact Us</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-12">
+                        <p class="footer__header col-12">Our Products</p>
+                        <ul class="footer__list list__vertical">
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Powermax</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">CNC Cutters</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Robotmasters</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">ProNest</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">HyPerformance</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-12">
+                        <p class="footer__header col-12">Resources</p>
+                        <ul class="footer__list list__vertical">
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Documents Library</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Training</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Supplier Resource Center</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <p class="footer__header col-12"></p>
+                        <ul class="list__horizontal">
+                            <li class="list__horizontal-item list__horizontal-item__borderless">
+                                <a href="#" class="list__horizontal-link">
+                                    <span class="mdi mdi-cart mr-1"></span>cart
+                                </a>
+                            </li>
+                            <li class="list__horizontal-item list__horizontal-item__borderless">
+                                <a href="#" class="list__horizontal-link">
+                                    <span class="mdi mdi-account-circle-outline mr-1"></span>my account
+                                </a>
+                            </li>
+                            <li class="list__horizontal-item list__horizontal-item__borderless">
+                                <a href="#" class="list__horizontal-link">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.multiple-items').slick({
+                infinite: true,
+                speed: 2000,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+</body>
+
+</html>

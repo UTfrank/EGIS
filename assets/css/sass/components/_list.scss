@@ -1,0 +1,49 @@
+.list {
+    &__horizontal {
+        float: right;
+        margin: 0 0 0 0;
+        padding: .5rem;
+        &-item {
+            display: inline;
+            list-style-type: none;
+            padding: .5rem 1rem;
+            line-height: .1rem;
+            &:not(:last-of-type) {
+                border-right: .12rem solid $color-black;
+            }
+            &__borderless {
+                border: none !important;
+            }
+        }
+        &-link {
+            text-transform: capitalize;
+            &:link,
+            &:visited {
+                color: $color-black;
+                font-size: 1.4rem;
+            }
+            &:focus,
+            &:hover {
+                text-decoration: none;
+            }
+            & .mdi {
+                font-size: 2rem;
+            }
+        }
+    }
+    &__vertical {
+        list-style: none;
+        padding: 0rem;
+        &-item {
+            margin-bottom: 1.8rem;
+        }
+        &-link {
+            font-size: 1.2rem;
+            &:focus,
+            &:hover,
+            &:active {
+                text-decoration: none;
+            }
+        }
+    }
+}

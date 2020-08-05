@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EGIS</title>
+
+    <link rel="stylesheet" href="assets/css/sass/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/sass/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/sass/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/sass/vendor/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <header class="header col-12">
+                <div class="row justify-content-center">
+                    <div class="header__top col-12 p-3 bg-grey-80">
+                        <ul class="list__horizontal">
+                            <li class="list__horizontal-item">
+                                <a href="#" class="list__horizontal-link">
+                                    <span class="mdi mdi-cart mr-1"></span>cart
+                                </a>
+                            </li>
+                            <li class="list__horizontal-item">
+                                <a href="#" class="list__horizontal-link">
+                                    <span class="mdi mdi-account-circle-outline mr-1"></span>my account
+                                </a>
+                            </li>
+                            <li class="list__horizontal-item">
+                                <a href="#" class="list__horizontal-link">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__middle col-12 bg-white">
+                        <div class="row justify-content-center">
+                            <form class="form-inline form__search my-2 my-lg-0 col-md-6 col-12">
+                                <input class="form-control form__search-input col-10" type="search"
+                                    placeholder="Search Products" aria-label="Search">
+                                <button class="btn btn__search my-2 my-sm-0 bg-orange col-2" type="submit">
+                                    <span class="mdi mdi-magnify"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-light w-100 bg-orange">
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="dropdownMenuOffset" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false" data-offset="10,20" role="button">
+                                        Products
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                        <h6 class="dropdown-header">Browse By Product Type</h6>
+                                        <a class="dropdown-item" href="#">Plasma Systems</a>
+                                        <a class="dropdown-item" href="#">Waterjet</a>
+                                        <a class="dropdown-item" href="#">CAD/CAM Software</a>
+                                        <a class="dropdown-item" href="#">CNCs</a>
+                                        <a class="dropdown-item" href="#">Height Controls</a>
+                                        <a class="dropdown-item" href="#">Torches</a>
+                                        <a class="dropdown-item" href="#">Accessories</a>
+                                        <div class="dropdown-divider"></div>
+                                        <h6 class="dropdown-header">Browse By Product Line</h6>
+                                        <a class="dropdown-item" href="#">XPR Plasma</a>
+                                        <a class="dropdown-item" href="#">HyPerformance Plasma</a>
+                                        <a class="dropdown-item" href="#">Powermax Plasma</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Eland Cable</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Our Company</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Learn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                            <!-- <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form> -->
+                        </div>
+                    </nav>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/carousel-2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/carousel-3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/carousel-2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <!-- top sellers section -->
+            <div class="col-12 mt-5 p-5">
+                <div class="row justify-content-center">
+                    <h2 class="col-12 heading__primary">
+                        top sellers
+                    </h2>
+                    <div class="col-11 slider-wrapper">
+                        <div class="row justify-content-center">
+                            <div class="multiple-items w-100">
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-image img-fluid">
+                                                <span class="card__product-tag bg-yellow">Category</span>
+                                            </div>
+                                            <div class="card__product-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-title col-12">Powermax 30 Air</h5>
+                                                    <p class="card__product-brand col-12">Brand</p>
+                                                    <p class="card__product-price col-8">
+                                                        <del class="card__product-price--slash">AED 32.00</del>
+                                                        AED 25.60
+                                                    </p>
+                                                    <p class="card__product-discount col-4">
+                                                        <span>30% Off</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-image img-fluid">
+                                                <span class="card__product-tag bg-yellow">Category</span>
+                                            </div>
+                                            <div class="card__product-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-title col-12">Powermax 30 Air</h5>
+                                                    <p class="card__product-brand col-12">Brand</p>
+                                                    <p class="card__product-price col-8">
+                                                        <del class="card__product-price--slash">AED 32.00</del>
+                                                        AED 25.60
+                                                    </p>
+                                                    <p class="card__product-discount col-4">
+                                                        <span>30% Off</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-image img-fluid">
+                                                <span class="card__product-tag bg-yellow">Category</span>
+                                            </div>
+                                            <div class="card__product-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-title col-12">Powermax 30 Air</h5>
+                                                    <p class="card__product-brand col-12">Brand</p>
+                                                    <p class="card__product-price col-8">
+                                                        <del class="card__product-price--slash">AED 32.00</del>
+                                                        AED 25.60
+                                                    </p>
+                                                    <p class="card__product-discount col-4">
+                                                        <span>30% Off</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-image img-fluid">
+                                                <span class="card__product-tag bg-yellow">Category</span>
+                                            </div>
+                                            <div class="card__product-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-title col-12">Powermax 30 Air</h5>
+                                                    <p class="card__product-brand col-12">Brand</p>
+                                                    <p class="card__product-price col-8">
+                                                        <del class="card__product-price--slash">AED 32.00</del>
+                                                        AED 25.60
+                                                    </p>
+                                                    <p class="card__product-discount col-4">
+                                                        <span>30% Off</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-image img-fluid">
+                                                <span class="card__product-tag bg-yellow">Category</span>
+                                            </div>
+                                            <div class="card__product-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-title col-12">Powermax 30 Air</h5>
+                                                    <p class="card__product-brand col-12">Brand</p>
+                                                    <p class="card__product-price col-8">
+                                                        <del class="card__product-price--slash">AED 32.00</del>
+                                                        AED 25.60
+                                                    </p>
+                                                    <p class="card__product-discount col-4">
+                                                        <span>30% Off</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end mt-3">
+                            <a href="#" class="btn pt-3 pb-3 btn__yellow-outline col-2">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- why choose us -->
+            <div class="col-12 mt-5 bg-grey-90 p-5">
+                <div class="row justify-content-center">
+                    <h2 class="col-12 heading__primary">
+                        why should you choose us
+                    </h2>
+                    <div class="col-12">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 col-md-6 col-12 mt-4">
+                                <div class="col-12 card text-center">
+                                    <div class="card__icon-large col-12 color-yellow">
+                                        <span class="mdi mdi-cart mr-1"></span>
+                                    </div>
+                                    <div class="card-body col-12">
+                                        <h3 class="card-title col-12">
+                                            Quick Shipping
+                                        </h3>
+                                        <p class="card__text col-12 color-grey-50">
+                                            All purchases over $199 are eligible for shipping via USPS First Class Email.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 mt-4">
+                                <div class="col-12 card text-center">
+                                    <div class="card__icon-large col-12 color-yellow">
+                                        <span class="mdi mdi-cart mr-1"></span>
+                                    </div>
+                                    <div class="card-body col-12">
+                                        <h3 class="card-title col-12">
+                                            Easy Payments
+                                        </h3>
+                                        <p class="card__text col-12 color-grey-50">
+                                            All payments are processed instantly over a secured payment protocol.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 mt-4">
+                                <div class="col-12 card text-center">
+                                    <div class="card__icon-large col-12 color-yellow">
+                                        <span class="mdi mdi-cart mr-1"></span>
+                                    </div>
+                                    <div class="card-body col-12">
+                                        <h3 class="card-title col-12">
+                                            Money Back Guarantee
+                                        </h3>
+                                        <p class="card__text col-12 color-grey-50">
+                                            If an item arrived damaged or you change your mind, you can send it back for a full refund.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 mt-4">
+                                <div class="col-12 card text-center">
+                                    <div class="card__icon-large col-12 color-yellow">
+                                        <span class="mdi mdi-cart mr-1"></span>
+                                    </div>
+                                    <div class="card-body col-12">
+                                        <h3 class="card-title col-12">
+                                            Finest Quality
+                                        </h3>
+                                        <p class="card__text col-12 color-grey-50">
+                                            designed to last. Each of our products has been crafted with the finest quality.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- banner -->
+             <div class="container-fluid banner">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="col-12">
+                        <div class="row justify-content-center">
+                            <form class="form-inline form__subscribe my-2 my-lg-0 col-md-6 col-12">
+                                <input class="form-control form__subscribe-input col-8" type="email"
+                                    placeholder="enter your email">
+                                <button class="btn btn__subscribe my-2 my-sm-0 bg-orange" type="submit">
+                                    Subscribe
+                                </button>
+                            </form>
+                            <h1 class="col-md-6 col-12 banner__text">
+                                Subscribe to our newsletterand receive exclusive offers every week
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <footer class="col-12 footer bg-grey-50">
+                <div class="row justify-content-center">
+                    <div class="col-md-2 col-12 footer__logo">
+                        <img src="assets/images/teachable-logo.png" alt="teachable logo" class="img-fluid">
+                    </div>
+                    <div class="col-md-2 col-12">
+                        <p class="footer__header col-12">Our Company</p>
+                        <ul class="footer__list list__vertical">
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Home</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">About</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Contact Us</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-12">
+                        <p class="footer__header col-12">Our Products</p>
+                        <ul class="footer__list list__vertical">
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Powermax</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">CNC Cutters</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Robotmasters</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">ProNest</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">HyPerformance</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-12">
+                        <p class="footer__header col-12">Resources</p>
+                        <ul class="footer__list list__vertical">
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Documents Library</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Training</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Supplier Resource Center</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <p class="footer__header col-12"></p>
+                        <ul class="list__horizontal">
+                            <li class="list__horizontal-item list__horizontal-item__borderless">
+                                <a href="#" class="list__horizontal-link">
+                                    <span class="mdi mdi-cart mr-1"></span>cart
+                                </a>
+                            </li>
+                            <li class="list__horizontal-item list__horizontal-item__borderless">
+                                <a href="#" class="list__horizontal-link">
+                                    <span class="mdi mdi-account-circle-outline mr-1"></span>my account
+                                </a>
+                            </li>
+                            <li class="list__horizontal-item list__horizontal-item__borderless">
+                                <a href="#" class="list__horizontal-link">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.multiple-items').slick({
+                infinite: true,
+                speed: 2000,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>

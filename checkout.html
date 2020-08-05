@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EGIS - Checkout Page</title>
+
+    <link rel="stylesheet" href="assets/css/sass/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/sass/vendor/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/sass/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/sass/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <header class="header col-12">
+                <div class="row justify-content-center">
+                    <div class="header__top col-12 p-3 bg-grey-80">
+                        <ul class="list__horizontal">
+                            <li class="list__horizontal-item">
+                                <a href="#" class="list__horizontal-link">
+                                    <span class="mdi mdi-cart mr-1"></span>cart
+                                </a>
+                            </li>
+                            <li class="list__horizontal-item">
+                                <a href="#" class="list__horizontal-link">
+                                    <span class="mdi mdi-account-circle-outline mr-1"></span>my account
+                                </a>
+                            </li>
+                            <li class="list__horizontal-item">
+                                <a href="#" class="list__horizontal-link">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__middle col-12 bg-white">
+                        <div class="row justify-content-center">
+                            <form class="form-inline form__search my-2 my-lg-0 col-md-6 col-12">
+                                <input class="form-control form__search-input col-10" type="search"
+                                    placeholder="Search Products" aria-label="Search">
+                                <button class="btn btn__search my-2 my-sm-0 bg-orange col-2" type="submit">
+                                    <span class="mdi mdi-magnify"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-light w-100 bg-orange">
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="dropdownMenuOffset" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false" data-offset="10,20" role="button">
+                                        Products
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                        <h6 class="dropdown-header">Browse By Product Type</h6>
+                                        <a class="dropdown-item" href="#">Plasma Systems</a>
+                                        <a class="dropdown-item" href="#">Waterjet</a>
+                                        <a class="dropdown-item" href="#">CAD/CAM Software</a>
+                                        <a class="dropdown-item" href="#">CNCs</a>
+                                        <a class="dropdown-item" href="#">Height Controls</a>
+                                        <a class="dropdown-item" href="#">Torches</a>
+                                        <a class="dropdown-item" href="#">Accessories</a>
+                                        <div class="dropdown-divider"></div>
+                                        <h6 class="dropdown-header">Browse By Product Line</h6>
+                                        <a class="dropdown-item" href="#">XPR Plasma</a>
+                                        <a class="dropdown-item" href="#">HyPerformance Plasma</a>
+                                        <a class="dropdown-item" href="#">Powermax Plasma</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Eland Cable</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Our Company</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Learn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                            <!-- <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form> -->
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- product section -->
+            <div class="col-12 mt-5 p-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-md-6 col-12">
+                        <form class="form__multiple" id="msform">
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                                <li class="active">Personal Details</li>
+                                <li>Social Profiles</li>
+                                <li>Account Setup</li>
+                            </ul>
+                            <!-- fieldsets -->
+                            <fieldset>
+                                <h2 class="fs-title">Personal Details</h2>
+                                <h3 class="fs-subtitle">Tell us something more about you</h3>
+                                <input type="text" name="fname" placeholder="First Name"/>
+                                <input type="text" name="lname" placeholder="Last Name"/>
+                                <input type="text" name="phone" placeholder="Phone"/>
+                                <input type="button" name="next" class="next action-button" value="Next"/>
+                            </fieldset>
+                            <fieldset>
+                                <h2 class="fs-title">Social Profiles</h2>
+                                <h3 class="fs-subtitle">Your presence on the social network</h3>
+                                <input type="text" name="twitter" placeholder="Twitter"/>
+                                <input type="text" name="facebook" placeholder="Facebook"/>
+                                <input type="text" name="gplus" placeholder="Google Plus"/>
+                                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                                <input type="button" name="next" class="next action-button" value="Next"/>
+                            </fieldset>
+                            <fieldset>
+                                <h2 class="fs-title">Create your account</h2>
+                                <h3 class="fs-subtitle">Fill in your credentials</h3>
+                                <input type="text" name="email" placeholder="Email"/>
+                                <input type="password" name="pass" placeholder="Password"/>
+                                <input type="password" name="cpass" placeholder="Confirm Password"/>
+                                <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                                <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-12">
+                    </div>
+                </div>
+            </div>
+            <!-- top sellers section -->
+            <div class="col-12 mt-5 p-5">
+                <div class="row justify-content-center">
+                    <h2 class="col-12 heading__secondary">
+                        related products
+                    </h2>
+                    <div class="col-11 slider-wrapper">
+                        <div class="row justify-content-center">
+                            <div class="multiple-items w-100">
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-2-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-2-image img-fluid">
+                                            </div>
+                                            <div class="card__product-2-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-2-title col-12">Branded Electric Toolset
+                                                    </h5>
+                                                    <p class="card__product-2-brand col-12">Brand</p>
+                                                    <p class="card__product-2-price col-6">
+                                                        $250
+                                                    </p>
+                                                    <p class="card__product-2-discount col-6">
+                                                        <button class="btn btn__yellow-curved-2">
+                                                            Add to Cart
+                                                        </button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-2-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-2-image img-fluid">
+                                            </div>
+                                            <div class="card__product-2-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-2-title col-12">Branded Electric Toolset
+                                                    </h5>
+                                                    <p class="card__product-2-brand col-12">Brand</p>
+                                                    <p class="card__product-2-price col-6">
+                                                        $250
+                                                    </p>
+                                                    <p class="card__product-2-discount col-6">
+                                                        <button class="btn btn__yellow-curved-2">
+                                                            Add to Cart
+                                                        </button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-2-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-2-image img-fluid">
+                                            </div>
+                                            <div class="card__product-2-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-2-title col-12">Branded Electric Toolset
+                                                    </h5>
+                                                    <p class="card__product-2-brand col-12">Brand</p>
+                                                    <p class="card__product-2-price col-6">
+                                                        $250
+                                                    </p>
+                                                    <p class="card__product-2-discount col-6">
+                                                        <button class="btn btn__yellow-curved-2">
+                                                            Add to Cart
+                                                        </button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-2-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-2-image img-fluid">
+                                            </div>
+                                            <div class="card__product-2-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-2-title col-12">Branded Electric Toolset
+                                                    </h5>
+                                                    <p class="card__product-2-brand col-12">Brand</p>
+                                                    <p class="card__product-2-price col-6">
+                                                        $250
+                                                    </p>
+                                                    <p class="card__product-2-discount col-6">
+                                                        <button class="btn btn__yellow-curved-2">
+                                                            Add to Cart
+                                                        </button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-12 mt-4">
+                                    <div class="card__product-2 card__product-2-shadowless col-12 mb-3">
+                                        <a href="#">
+                                            <div class="card__product-2-header">
+                                                <img src="assets/images/hypertherm-plasma-cutter-powermax-105.jpg"
+                                                    alt="" class="card__product-2-image img-fluid">
+                                            </div>
+                                            <div class="card__product-2-body">
+                                                <div class="row justify-content-center">
+                                                    <h5 class="card__product-2-title col-12">Branded Electric Toolset
+                                                    </h5>
+                                                    <p class="card__product-2-brand col-12">Brand</p>
+                                                    <p class="card__product-2-price col-6">
+                                                        $250
+                                                    </p>
+                                                    <p class="card__product-2-discount col-6">
+                                                        <button class="btn btn__yellow-curved-2">
+                                                            Add to Cart
+                                                        </button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <footer class="col-12 footer bg-grey-50">
+                <div class="row justify-content-center">
+                    <div class="col-md-2 col-12 footer__logo">
+                        <img src="assets/images/teachable-logo.png" alt="teachable logo" class="img-fluid">
+                    </div>
+                    <div class="col-md-2 col-12">
+                        <p class="footer__header col-12">Our Company</p>
+                        <ul class="footer__list list__vertical">
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Home</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">About</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Contact Us</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-12">
+                        <p class="footer__header col-12">Our Products</p>
+                        <ul class="footer__list list__vertical">
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Powermax</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">CNC Cutters</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Robotmasters</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">ProNest</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">HyPerformance</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-12">
+                        <p class="footer__header col-12">Resources</p>
+                        <ul class="footer__list list__vertical">
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Documents Library</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Training</a>
+                            </li>
+                            <li class="footer__item list__vertical-item">
+                                <a href="#" class="footer__link list__vertical-link">Supplier Resource Center</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <p class="footer__header col-12"></p>
+                        <ul class="list__horizontal">
+                            <li class="list__horizontal-item list__horizontal-item__borderless">
+                                <a href="#" class="list__horizontal-link">
+                                    <span class="mdi mdi-cart mr-1"></span>cart
+                                </a>
+                            </li>
+                            <li class="list__horizontal-item list__horizontal-item__borderless">
+                                <a href="#" class="list__horizontal-link">
+                                    <span class="mdi mdi-account-circle-outline mr-1"></span>my account
+                                </a>
+                            </li>
+                            <li class="list__horizontal-item list__horizontal-item__borderless">
+                                <a href="#" class="list__horizontal-link">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.multiple-items').slick({
+                infinite: true,
+                speed: 2000,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+            $('.stepper').mdbStepper();
+        });
+
+        function someFunction21() {
+            setTimeout(function () {
+                $('#horizontal-stepper').nextStep();
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>

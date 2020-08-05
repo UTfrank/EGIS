@@ -1,0 +1,18 @@
+.breadcrumb {
+    background-color: transparent;
+    padding: 2rem;
+    &-item {
+        &,
+        & a {
+            font-size: 1.6rem;
+            color: $color-grey-50;
+        }
+        &.active {
+            color: $color-black;
+        }
+        & + & {
+            margin-left: 1rem;
+            padding-left: 1rem;
+        }
+    }
+}
