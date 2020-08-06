@@ -58,6 +58,20 @@
         border-radius: 0rem;
         background-color: $color-yellow;
     }
+    &__black-squared {
+        padding: 1.5rem;
+        border: none;
+        border-radius: 0rem;
+        background-color: $color-black;
+        color: $color-white !important;
+    }
+    &__orange-squared {
+        padding: 1.5rem;
+        border: none;
+        border-radius: 0rem;
+        background-color: $color-orange;
+        color: $color-white;
+    }
     &__facebook {
         padding: 1.5rem 3rem;
         border-radius: 4rem;
